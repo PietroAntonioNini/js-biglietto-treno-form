@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno Form</title>
+
+    <!-- my stile -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="box">
+        <form id="myForm">
+
+            <h1>Calcola il prezzo del tuo biglietto</h1>
+
+            <div class="input-box">
+                <div class="user-info">
+                    <div class="user-name">
+                        <label for="userName">Nome Cognome</label>
+                        <input id="userName" type="text">
+                    </div>
+    
+                    <div class="user-km">
+                        <label for="km">Km da percorrere</label>
+                        <input id="km" type="number" min="0" required value="0">
+                    </div>
+    
+                    <div class="user-age">
+                        <label for="age">Età</label>
+                        <input id="age" type="number" min="0" max="120" step="1" required value="0">
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button id="submit">Genera</button>
+                    <button id="reset">Annulla</button>
+                </div>
+            </div>
+
+            <div class="ticket-box"">
+
+                <h2>Il tuo biglietto</h2>
+
+                <div class="ticket"> 
+
+                    <h3>Dettaglio passeggeri</h3>
+
+                    <div class="print-ticket">
+                        <div class="ticket-name">
+                            <h3>Nome passeggero</h3>
+                            <span id="ticket-name"></span>
+                        </div>
+    
+                        <div class="ticket-info">
+    
+                            <div class="ticket-type">
+                                <h4>Offerta</h4>
+                                <span id="offert"></span>
+                            </div>
+    
+                            <div class="ticket-carriage">
+                                <h4>Carrozza</h4>
+                                <span id="number-carriage"></span>
+                            </div>
+    
+                            <div class="ticket-CP">
+                                <h4>Codice CP</h4>
+                                <span id="cp"></span>
+                            </div>
+    
+                            <div class="ticket-price">
+                                <h4>Costo Biglietto</h4>
+                                <span id="price"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
